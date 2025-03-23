@@ -1,0 +1,65 @@
+.tableContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Prevents layout breaking for small screens */
+  transition: all 0.3s ease-in-out; /* Smooth updates */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: auto; /* Auto adjust column width */
+}
+
+.table th,
+.table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  transition: background 0.3s ease-in-out; /* Smooth effect when data updates */
+}
+
+.table th {
+  background-color: #1e293b;
+  color: white;
+  font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+  background-color: #f3f4f6;
+}
+
+.table tr:hover {
+  background-color: #e5e7eb; /* Slight hover effect */
+}
+
+/* ✅ New: Animation for dynamic row updates */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.table tbody tr {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ✅ New: Improve Mobile Responsiveness */
+@media (max-width: 768px) {
+  .tableContainer {
+    padding: 10px;
+  }
+
+  .table th,
+  .table td {
+    padding: 8px;
+    font-size: 14px;
+  }
+}

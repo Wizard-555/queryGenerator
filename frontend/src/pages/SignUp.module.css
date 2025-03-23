@@ -1,0 +1,86 @@
+/* Centering the signup card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(135deg, #1e293b, #0f172a);
+}
+
+/* Glassmorphism effect for card */
+.card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(12px);
+  text-align: center;
+  width: 350px;
+}
+
+/* Heading styling */
+.title {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+/* Form layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+/* Improved input styling */
+.input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Placeholder styling for better readability */
+.input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Improved focus styling for inputs */
+.input:focus {
+  background: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.3);
+}
+
+/* Button styling */
+.button {
+  width: 100%;
+  background: #2563eb;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s;
+  margin-top: 10px;
+}
+
+/* Smoother hover effect */
+.button:hover {
+  background: #1d4ed8;
+  transform: scale(1.05);
+}
+
+/* Add active effect for button */
+.button:active {
+  background: #1e40af;
+  transform: scale(1);
+}

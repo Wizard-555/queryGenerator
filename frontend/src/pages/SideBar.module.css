@@ -1,0 +1,44 @@
+.sidebar {
+  width: 250px;
+  background-color: #1e293b;
+  color: white;
+  padding: 20px;
+  height: 100vh;
+  overflow-y: auto; /* Allows scrolling if sidebar content overflows */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.3s ease-in-out;
+}
+
+li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.active {
+  font-weight: bold;
+  color: #38bdf8;
+  background: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,10 @@
+.footer {
+  text-align: center;
+  background: #1f2937;
+  color: #9ca3af;
+  padding: 15px;
+  font-size: 0.9rem;
+  width: 100%;
+  position: relative; /* Keeps footer positioned properly */
+  bottom: 0;
+}
